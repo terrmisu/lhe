@@ -1,0 +1,9 @@
+{
+    "name": "com.mycompany.virustotal",
+    "description": "VirusTotal file scanner",
+    "path": "C:\\tmp\\my-extension4\\my-extension\\my-extension\\virustotal_scan.py",
+    "type": "stdio",
+    "allowed_origins": [
+         "chrome-extension://*/"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "VirusTotal URL & File Checker",
+  "version": "1.2",
+  "description": "Checks URLs and downloaded files against VirusTotal.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "webNavigation",
+    "downloads",
+    "downloads.open",
+    "notifications",
+    "storage",
+    "webRequest",
+    "declarativeNetRequest",
+    "nativeMessaging",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "file://*",
+    "https://www.virustotal.com/*",
+    "https://api.metadefender.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  }
+}
